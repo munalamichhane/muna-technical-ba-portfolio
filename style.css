@@ -1,165 +1,119 @@
-/* ===============================
-   Global Styles
-=============================== */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
+  background-color: #f4f7fb;
   color: #333;
-  background-color: #f0f4f8; /* subtle soft background */
 }
 
-a {
-  color: #0077b6;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #005f87;
-}
-
-/* ===============================
-   Header
-=============================== */
+/* Header */
 header {
+  background-color: #0d1b2a;
+  color: white;
+  padding: 50px;
   text-align: center;
-  padding: 60px 20px;
-  background-color: #0d1b2a; /* deep blue */
-  color: #fff;
 }
 
 header h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
-header .subtitle {
-  font-size: 1.4rem;
-  color: #a8c0d0;
+.subtitle {
+  font-size: 1.3rem;
+  color: #c7d6e5;
 }
 
-/* ===============================
-   Navigation (tabs)
-=============================== */
+/* Navigation Tabs */
 nav {
   background-color: #0077b6;
-  display: flex;
-  justify-content: center;
-  padding: 12px 0;
+  padding: 12px;
+  text-align: center;
 }
 
 nav a {
-  color: #fff;
-  padding: 10px 20px;
-  margin: 0 5px;
+  color: white;
+  margin: 0 15px;
   font-weight: bold;
+  text-decoration: none;
+  padding: 8px 14px;
   border-radius: 4px;
-  transition: background-color 0.3s;
 }
 
 nav a:hover {
   background-color: #005f87;
 }
 
-/* ===============================
-   Main Content
-=============================== */
+/* Main */
 main {
   max-width: 1000px;
   margin: auto;
-  padding: 40px 20px;
-}
-
-section {
-  margin-bottom: 60px;
+  padding: 40px;
 }
 
 h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
   color: #0077b6;
   border-bottom: 3px solid #0077b6;
   display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
+  font-size: 2.2rem;
 }
 
-/* ===============================
-   Project Cards
-=============================== */
+/* Project Cards */
 .project-card {
-  background-color: #fff;
+  background: white;
   border: 2px solid #0077b6;
   border-radius: 10px;
   padding: 25px;
-  margin-bottom: 40px;
-}
-
-.project-card h3 {
-  margin-top: 15px;
-  font-size: 1.8rem;
-  color: #0d1b2a;
-}
-
-.project-subtitle {
-  font-style: italic;
-  color: #555;
-  margin: 5px 0 15px 0;
-}
-
-.project-tags {
-  margin-top: 10px;
-}
-
-.tag {
-  display: inline-block;
-  background-color: #e0f2f1;
-  color: #00796b;
-  padding: 5px 12px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  font-size: 0.9rem;
+  margin-top: 40px;
 }
 
 .project-image {
   width: 100%;
   max-width: 600px;
-  height: auto;
-  display: block;
-  margin-bottom: 15px;
   border-radius: 6px;
+  margin-bottom: 15px;
 }
 
-/* Project Footer Buttons */
-.project-footer {
-  margin-top: 15px;
+.project-card h3 {
+  font-size: 1.8rem;
+  margin-top: 10px;
 }
 
+.project-subtitle {
+  font-style: italic;
+  color: #555;
+}
+
+.project-tags {
+  margin: 10px 0;
+}
+
+.tag {
+  background-color: #e0f2f1;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-right: 6px;
+  font-weight: bold;
+}
+
+/* Buttons */
 .project-btn {
   display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 18px;
   background-color: #0077b6;
-  color: #fff;
-  padding: 10px 16px;
+  color: white;
   border-radius: 5px;
   font-weight: bold;
-  margin-right: 10px;
+  text-decoration: none;
 }
 
 .project-btn:hover {
   background-color: #005f87;
 }
 
-.status-label {
-  font-size: 1rem;
-  color: #ff6b6b;
-  font-weight: bold;
-  margin-left: 5px;
-}
-
-/* ===============================
-   Skills Section
-=============================== */
+/* Skills */
 .skills-list {
   list-style: none;
   padding-left: 0;
@@ -168,33 +122,18 @@ h2 {
 .skills-list li {
   display: inline-block;
   background-color: #e8f0fe;
-  margin: 5px 10px 5px 0;
-  padding: 10px 15px;
+  padding: 10px 16px;
+  margin: 6px;
   border-radius: 6px;
   font-weight: bold;
-  color: #0d1b2a;
-  font-size: 1rem;
 }
 
-/* ===============================
-   Contact Section
-=============================== */
-#contact a {
-  color: #0077b6;
-}
-
-#contact a:hover {
-  color: #005f87;
-}
-
-/* ===============================
-   Footer
-=============================== */
+/* Footer */
 footer {
   background-color: #0077b6;
-  color: #fff;
+  color: white;
   text-align: center;
-  padding: 25px 10px;
-  margin-top: 40px;
-  font-weight: bold;
+  padding: 20px;
+  margin-top: 60px;
 }
+
