@@ -2,22 +2,21 @@
    Global Styles
 =============================== */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
   color: #333;
-  background-color: #f8f9fa; /* soft, clean background */
+  background-color: #f0f4f8; /* subtle soft background */
 }
 
 a {
   color: #0077b6;
   text-decoration: none;
-  transition: color 0.3s;
 }
 
 a:hover {
-  color: #0096c7;
+  color: #005f87;
 }
 
 /* ===============================
@@ -26,42 +25,45 @@ a:hover {
 header {
   text-align: center;
   padding: 60px 20px;
-  background-color: #0d1b2a; /* deep professional blue */
+  background-color: #0d1b2a; /* deep blue */
   color: #fff;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.8rem;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 header .subtitle {
-  font-size: 1.2rem;
-  margin-top: 10px;
+  font-size: 1.4rem;
   color: #a8c0d0;
 }
 
 /* ===============================
-   Navigation
+   Navigation (tabs)
 =============================== */
 nav {
-  text-align: center;
-  padding: 15px 0;
-  background-color: #14213d;
+  background-color: #0077b6;
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
 }
 
 nav a {
-  margin: 0 15px;
-  font-weight: 500;
-  color: #f4f6f8;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
 nav a:hover {
-  color: #00b4d8;
+  background-color: #005f87;
 }
 
 /* ===============================
-   Main Sections
+   Main Content
 =============================== */
 main {
   max-width: 1000px;
@@ -74,10 +76,10 @@ section {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 20px;
-  color: #0d1b2a;
-  border-bottom: 2px solid #0077b6;
+  color: #0077b6;
+  border-bottom: 3px solid #0077b6;
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -87,21 +89,16 @@ h2 {
 =============================== */
 .project-card {
   background-color: #fff;
+  border: 2px solid #0077b6;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   padding: 25px;
   margin-bottom: 40px;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.project-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 .project-card h3 {
-  margin-top: 10px;
-  font-size: 1.6rem;
+  margin-top: 15px;
+  font-size: 1.8rem;
+  color: #0d1b2a;
 }
 
 .project-subtitle {
@@ -118,17 +115,16 @@ h2 {
   display: inline-block;
   background-color: #e0f2f1;
   color: #00796b;
-  padding: 4px 10px;
+  padding: 5px 12px;
   margin-right: 5px;
   margin-bottom: 5px;
   border-radius: 5px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
-/* Project Images */
 .project-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   height: auto;
   display: block;
   margin-bottom: 15px;
@@ -137,28 +133,27 @@ h2 {
 
 /* Project Footer Buttons */
 .project-footer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .project-btn {
+  display: inline-block;
   background-color: #0077b6;
   color: #fff;
   padding: 10px 16px;
   border-radius: 5px;
-  font-weight: 500;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 .project-btn:hover {
-  background-color: #0096c7;
+  background-color: #005f87;
 }
 
 .status-label {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #ff6b6b;
-  font-weight: 600;
+  font-weight: bold;
   margin-left: 5px;
 }
 
@@ -174,10 +169,11 @@ h2 {
   display: inline-block;
   background-color: #e8f0fe;
   margin: 5px 10px 5px 0;
-  padding: 8px 12px;
-  border-radius: 5px;
-  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
   color: #0d1b2a;
+  font-size: 1rem;
 }
 
 /* ===============================
@@ -188,39 +184,17 @@ h2 {
 }
 
 #contact a:hover {
-  color: #0096c7;
+  color: #005f87;
 }
 
 /* ===============================
    Footer
 =============================== */
 footer {
-  background-color: #14213d;
-  color: #f4f6f8;
+  background-color: #0077b6;
+  color: #fff;
   text-align: center;
   padding: 25px 10px;
   margin-top: 40px;
+  font-weight: bold;
 }
-
-/* ===============================
-   Responsive
-=============================== */
-@media (max-width: 768px) {
-  .project-footer {
-    flex-direction: column;
-  }
-  .project-image {
-    max-width: 100%;
-  }
-  header h1 {
-    font-size: 2.2rem;
-  }
-  header .subtitle {
-    font-size: 1rem;
-  }
-  nav a {
-    margin: 0 10px;
-  }
-}
-
-
