@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Muna Lamichhane | Technical Business Analyst</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
-<script src="js/script.js" defer></script>
-
+  <script src="js/script.js" defer></script>
 </head>
 <body>
 
@@ -19,10 +18,18 @@
     </p>
   </header>
 
+  <!-- Navigation (Optional) -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <!-- Main Content -->
   <main>
     <!-- About Me -->
-    <section>
+    <section id="about">
       <h2>About Me</h2>
       <p>
         I am a Technical Business Analyst with a background in Computer Science and hands-on experience supporting data-driven and software-focused initiatives. 
@@ -32,7 +39,7 @@
     </section>
 
     <!-- Projects -->
-    <section>
+    <section id="projects">
       <h2>Projects</h2>
 
       <!-- Marketing Analytics Dashboard -->
@@ -42,7 +49,7 @@
           A business analysis case study focused on defining marketing KPIs, querying campaign performance data using SQL, and translating analytical findings into actionable business recommendations for stakeholders.
         </p>
         <div class="project-footer">
-          <a href="marketing-dashboard.html" class="project-btn">Read Full Case Study &rarr;</a>
+          <a href="projects/marketing-dashboard/" class="project-btn">Read Full Case Study &rarr;</a>
         </div>
       </div>
 
@@ -53,7 +60,7 @@
           A technical business analysis project centered on using SQL to analyze operational datasets, identify trends, and provide insights aligned with business objectives.
         </p>
         <div class="project-footer">
-          <a href="sql-case-study.html" class="project-btn">Read Full Case Study &rarr;</a>
+          <a href="projects/sql-analytics/" class="project-btn">Read Full Case Study &rarr;</a>
         </div>
       </div>
 
@@ -69,74 +76,67 @@
           <span class="tag">Agile</span>
         </div>
       </div>
+
+      <!-- Quantum Healthcare Project -->
       <div class="project-card">
-  <img 
-    src="assets/quantum-healthcare.jpg" 
-    alt="Quantum AI in Healthcare"
-    class="project-image"
-  >
+        <img 
+          src="projects/quantum-healthcare/quantum-healthcare.jpg" 
+          alt="Quantum AI in Healthcare" 
+          class="project-image"
+        >
+        <h3>Quantum AI in Healthcare Applications</h3>
+        <p class="project-subtitle">Undergraduate Research · Rutgers University</p>
+        <p>
+          A literature review examining how Quantum Artificial Intelligence, 
+          quantum computing, and quantum sensors are transforming medical 
+          diagnostics, biomarker discovery, and neurological research, 
+          with a focus on Alzheimer’s disease.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Research</span>
+          <span class="tag">Quantum Computing</span>
+          <span class="tag">Healthcare Analytics</span>
+          <span class="tag">Ethics</span>
+        </div>
+        <div class="project-footer">
+          <a href="projects/quantum-healthcare/quantum-healthcare-research.pdf" target="_blank" class="project-btn">
+            Read Research Paper →
+          </a>
+        </div>
+      </div>
 
-  <h3>Quantum AI in Healthcare Applications</h3>
-
-  <p class="project-subtitle">
-    Undergraduate Research · Rutgers University
-  </p>
-
-  <p>
-    A literature review examining how Quantum Artificial Intelligence, 
-    quantum computing, and quantum sensors are transforming medical 
-    diagnostics, biomarker discovery, and neurological research, 
-    with a focus on Alzheimer’s disease.
-  </p>
-
-  <div class="project-tags">
-    <span class="tag">Research</span>
-    <span class="tag">Quantum Computing</span>
-    <span class="tag">Healthcare Analytics</span>
-    <span class="tag">Ethics</span>
-  </div>
-
-  <a href="research-quantum-healthcare.html" class="project-link">
-    Read Research Overview →
-  </a>
-</div>
-<div class="project-card">
-  <img 
-    src="assets/sensor-watch/sensor-watch.jpg" 
-    alt="Wearable Sensor Data Collection using Pixel Watch"
-    class="project-image"
-  >
-
-  <h3>Wearable Sensor Data Analysis Using Google Pixel Watch</h3>
-
-  <p class="project-subtitle">
-    Research & Software Development · Wearable Technology
-  </p>
-
-  <p>
-    A hands-on research and software project focused on collecting and analyzing
-    real-time accelerometer and gyroscope data from a Google Pixel Watch to support
-    motion analysis and research applications.
-  </p>
-
-  <div class="project-tags">
-    <span class="tag">Wearables</span>
-    <span class="tag">Sensors</span>
-    <span class="tag">Android</span>
-    <span class="tag">Data Analysis</span>
-    <span class="tag">Research</span>
-  </div>
-
-  <a href="sensor-watch-project.html" class="project-link">
-    View Project Artifacts →
-  </a>
-</div>
-
+      <!-- Pixel Watch Project -->
+      <div class="project-card">
+        <img 
+          src="projects/pixel-watch/sensor-watch.jpg" 
+          alt="Wearable Sensor Data using Pixel Watch" 
+          class="project-image"
+        >
+        <h3>Wearable Sensor Data Analysis Using Google Pixel Watch</h3>
+        <p class="project-subtitle">Research & Software Development · Wearable Technology</p>
+        <p>
+          A hands-on research and software project focused on collecting and analyzing
+          real-time accelerometer and gyroscope data from a Google Pixel Watch to support
+          motion analysis and research applications.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Wearables</span>
+          <span class="tag">Sensors</span>
+          <span class="tag">Android</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">Research</span>
+        </div>
+        <div class="project-footer">
+          <a href="projects/pixel-watch/pixel-watch.pdf" target="_blank" class="project-btn">
+            View PDF →
+          </a>
+        </div>
+      </div>
 
     </section>
 
     <!-- Skills -->
-    <section>
+    <section id="skills">
       <h2>Skills</h2>
       <ul class="skills-list">
         <li>Requirements Gathering & Documentation</li>
@@ -147,18 +147,20 @@
         <li>Stakeholder Communication</li>
       </ul>
     </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+    </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>
-      Connect with me on
-      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/" target="_blank">GitHub</a>
-    </p>
+    <p>&copy; 2026 Muna Lamichhane. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
-
-
