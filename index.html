@@ -1,116 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Muna Lamichhane | Technical Business Analyst</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Muna Lamichhane</h1>
-    <p class="subtitle">
-      Technical Business Analyst | Marketing & Data Analytics | Computer Science
-    </p>
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="container">
+      <h1>Muna Lamichhane</h1>
+      <p>Technical Business Analyst | Analytics • Research • Software</p>
+    </div>
   </header>
 
-  <!-- Navigation Tabs -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+  <!-- Navigation -->
+  <nav class="app-nav">
+    <div class="container">
+      <a href="index.html" class="active">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
-  <main>
+  <!-- Main Content -->
+  <main class="container">
 
-    <!-- About -->
-    <section id="about">
-      <h2>About Me</h2>
+    <!-- Intro -->
+    <section class="intro">
+      <h2>Portfolio Overview</h2>
       <p>
-        I am a Technical Business Analyst with a background in Computer Science and hands-on experience
-        supporting data-driven and software-focused initiatives. I specialize in translating business
-        and research needs into clear technical requirements, defining KPIs, and producing actionable
-        insights through structured analysis.
+        I build analytical, research-driven, and software-supported solutions by
+        translating complex technical and business problems into structured insights
+        and actionable outcomes.
       </p>
     </section>
 
-    <!-- Projects -->
+    <!-- Projects Grid -->
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Selected Projects</h2>
 
-      <!-- Quantum Healthcare -->
-      <div class="project-card">
-        <img src="assets/quantum-healthcare/quantum-healthcare.jpg" class="project-image">
-        <h3>Quantum AI in Healthcare Applications</h3>
-        <p class="project-subtitle">Undergraduate Research · Rutgers University</p>
-        <p>
-          A literature review examining how Quantum Artificial Intelligence and quantum computing
-          are transforming medical diagnostics, biomarker discovery, and neurological research,
-          with a focus on Alzheimer’s disease.
-        </p>
-        <div class="project-tags">
-          <span class="tag">Research</span>
-          <span class="tag">Quantum Computing</span>
-          <span class="tag">Healthcare Analytics</span>
+      <div class="project-grid">
+
+        <!-- Quantum Healthcare -->
+        <div class="project-card">
+          <img src="assets/quantum-healthcare/quantum-healthcare.jpg" alt="Quantum AI Healthcare">
+          <h3>Quantum AI in Healthcare</h3>
+          <p>Undergraduate research analyzing quantum computing, sensors, and AI applications in healthcare.</p>
+          <a href="projects/quantum-healthcare.html" class="btn">View Project</a>
         </div>
-        <a class="project-btn" target="_blank"
-           href="assets/quantum-healthcare/quantum-healthcare-research.pdf">
-          Read Research Paper →
-        </a>
-      </div>
 
-      <!-- Pixel Watch -->
-      <div class="project-card">
-        <img src="assets/sensor-watch/sensor-watch.jpg" class="project-image">
-        <h3>Wearable Sensor Data Analysis Using Google Pixel Watch</h3>
-        <p class="project-subtitle">Research & Software Development</p>
-        <p>
-          A hands-on research and software project focused on collecting and analyzing real-time
-          accelerometer and gyroscope data from a Google Pixel Watch to support motion analysis.
-        </p>
-        <div class="project-tags">
-          <span class="tag">Wearables</span>
-          <span class="tag">Sensors</span>
-          <span class="tag">Android</span>
+        <!-- Sensor Watch -->
+        <div class="project-card">
+          <img src="assets/sensor-watch/sensor-watch.jpg" alt="Pixel Watch Sensors">
+          <h3>Wearable Sensor Data Analysis</h3>
+          <p>Android-based data collection and analysis using Google Pixel Watch accelerometer and gyroscope sensors.</p>
+          <a href="projects/sensor-watch.html" class="btn">View Project</a>
         </div>
-        <a class="project-btn" target="_blank"
-           href="assets/sensor-watch/midterm-presentation.pdf">
-          Midterm Presentation →
-        </a>
-        <a class="project-btn" target="_blank"
-           href="assets/sensor-watch/final-presentation.pdf">
-          Final Presentation →
-        </a>
-      </div>
 
+        <!-- SQL Analytics -->
+        <div class="project-card">
+          <h3>SQL Analytics Business Analysis</h3>
+          <p>Operational and marketing analytics using SQL to surface trends and support decision-making.</p>
+          <a href="projects/sql-analytics.html" class="btn">View Project</a>
+        </div>
+
+        <!-- SwiftUI App -->
+        <div class="project-card">
+          <h3>SwiftUI iOS Application</h3>
+          <p>iOS application built using SwiftUI with focus on UI state management and user experience.</p>
+          <a href="projects/swiftui-app.html" class="btn">View Project</a>
+        </div>
+
+      </div>
     </section>
 
     <!-- Skills -->
     <section id="skills">
-      <h2>Skills</h2>
+      <h2>Core Skills</h2>
       <ul class="skills-list">
-        <li>Requirements Gathering & Documentation</li>
+        <li>Business & Technical Requirements</li>
         <li>SQL & Data Analysis</li>
-        <li>Marketing & Product Analytics</li>
+        <li>Research & Documentation</li>
         <li>HTML, CSS, JavaScript</li>
+        <li>Android (Kotlin) & SwiftUI</li>
         <li>Agile / Scrum</li>
-        <li>Stakeholder Communication</li>
       </ul>
     </section>
 
     <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: your.email@example.com</p>
-      <p>LinkedIn: linkedin.com/in/yourprofile</p>
-      <p>GitHub: github.com/yourgithub</p>
+      <p>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </p>
     </section>
 
   </main>
 
-  <footer>
+  <footer class="app-footer">
     <p>© 2026 Muna Lamichhane</p>
   </footer>
 
