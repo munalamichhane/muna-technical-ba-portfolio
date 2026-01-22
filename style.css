@@ -1,139 +1,129 @@
+/* Base */
 body {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: #f4f7fb;
-  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-color: #f4f6f9;
+  color: #1a1a1a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
 }
 
 /* Header */
-header {
+.app-header {
   background-color: #0d1b2a;
-  color: white;
-  padding: 50px;
-  text-align: center;
+  color: #ffffff;
+  padding: 48px 0;
 }
 
-header h1 {
-  font-size: 3rem;
+.app-header h1 {
   margin: 0;
+  font-size: 36px;
 }
 
-.subtitle {
-  font-size: 1.3rem;
-  color: #c7d6e5;
+.app-header p {
+  margin-top: 8px;
+  color: #cbd5e1;
 }
 
-/* Navigation Tabs */
-nav {
-  background-color: #0077b6;
-  padding: 12px;
-  text-align: center;
+/* Navigation */
+.app-nav {
+  background-color: #102a43;
 }
 
-nav a {
-  color: white;
-  margin: 0 15px;
-  font-weight: bold;
+.app-nav a {
+  color: #ffffff;
   text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 4px;
+  margin-right: 24px;
+  font-weight: 600;
 }
 
-nav a:hover {
-  background-color: #005f87;
+.app-nav .container {
+  display: flex;
+  align-items: center;
+  height: 56px;
 }
 
-/* Main */
-main {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px;
+.app-nav a.active,
+.app-nav a:hover {
+  color: #4dabf7;
+}
+
+/* Sections */
+section {
+  margin: 56px 0;
 }
 
 h2 {
-  color: #0077b6;
-  border-bottom: 3px solid #0077b6;
-  display: inline-block;
-  padding-bottom: 6px;
-  font-size: 2.2rem;
+  margin-bottom: 16px;
+  font-size: 26px;
 }
 
-/* Project Cards */
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+}
+
 .project-card {
-  background: white;
-  border: 2px solid #0077b6;
+  background: #ffffff;
   border-radius: 10px;
-  padding: 25px;
-  margin-top: 40px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.project-image {
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+}
+
+.project-card img {
   width: 100%;
-  max-width: 600px;
   border-radius: 6px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .project-card h3 {
-  font-size: 1.8rem;
-  margin-top: 10px;
+  margin-top: 0;
 }
 
-.project-subtitle {
-  font-style: italic;
-  color: #555;
-}
-
-.project-tags {
-  margin: 10px 0;
-}
-
-.tag {
-  background-color: #e0f2f1;
-  padding: 6px 12px;
-  border-radius: 5px;
-  margin-right: 6px;
-  font-weight: bold;
-}
-
-/* Buttons */
-.project-btn {
+.btn {
   display: inline-block;
-  margin-top: 10px;
-  margin-right: 10px;
-  padding: 10px 18px;
-  background-color: #0077b6;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #1c7ed6;
   color: white;
-  border-radius: 5px;
-  font-weight: bold;
   text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
 }
 
-.project-btn:hover {
-  background-color: #005f87;
+.btn:hover {
+  background-color: #1864ab;
 }
 
 /* Skills */
 .skills-list {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  columns: 2;
 }
 
 .skills-list li {
-  display: inline-block;
-  background-color: #e8f0fe;
-  padding: 10px 16px;
-  margin: 6px;
-  border-radius: 6px;
-  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 /* Footer */
-footer {
-  background-color: #0077b6;
-  color: white;
+.app-footer {
+  background-color: #0d1b2a;
+  color: #cbd5e1;
   text-align: center;
-  padding: 20px;
-  margin-top: 60px;
+  padding: 24px 0;
+  margin-top: 64px;
 }
-
