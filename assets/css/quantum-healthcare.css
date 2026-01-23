@@ -1,0 +1,71 @@
+/* Container styling */
+main.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #f9f9f9;
+}
+
+/* Section card styling */
+main.container section {
+  background-color: #ffffff;
+  padding: 1.8rem 2rem;
+  margin-bottom: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #2980b9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+main.container section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Headings */
+main.container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+main.container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #34495e;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 0.5rem;
+}
+
+/* Text */
+main.container p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #2d2d2d;
+}
+
+/* Lists */
+main.container ul {
+  padding-left: 1.5rem;
+}
+
+main.container li {
+  margin-bottom: 0.75rem;
+}
+
+/* Links */
+main.container a {
+  color: #2980b9;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+main.container a:hover {
+  text-decoration: underline;
+}
