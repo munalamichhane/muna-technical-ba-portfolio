@@ -1,72 +1,120 @@
-/* Container styling */
+/* ==============================
+   QUANTUM HEALTHCARE PROJECT PAGE
+   Modern / Tech Style
+   ============================== */
+
+/* Page container inherits the homepage spacing */
 main.container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem 1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #1a1a1a;
-  background-color: #f9f9f9;
-}
-
-/* Section card styling */
-main.container section {
+  padding: 3rem 1.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+  color: #0f172a;
   background-color: #ffffff;
-  padding: 1.8rem 2rem;
-  margin-bottom: 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-left: 6px solid #2980b9;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-main.container section:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 /* Headings */
-main.container h1 {
+h1 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
-  color: #2c3e50;
+  color: #020617;
 }
 
-main.container h2 {
-  font-size: 1.5rem;
+h2 {
+  font-size: 1.35rem;
   font-weight: 600;
-  margin-bottom: 1rem;
-  color: #34495e;
-  border-bottom: 2px solid #ecf0f1;
+  margin-bottom: 0.75rem;
+  color: #020617;
+  border-bottom: 1px solid #e5e7eb;
   padding-bottom: 0.5rem;
 }
 
-/* Text */
-main.container p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #2d2d2d;
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #111827;
 }
 
-/* Lists */
-main.container ul {
+/* Paragraphs and lists */
+p,
+li {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #334155;
+}
+
+ul {
+  list-style-type: disc;
   padding-left: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-main.container li {
+li {
   margin-bottom: 0.75rem;
 }
 
 /* Links */
-main.container a {
-  color: #2980b9;
-  font-weight: 500;
+a {
+  color: #2563eb;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
 }
 
-main.container a:hover {
+a:hover {
+  color: #1e40af;
   text-decoration: underline;
 }
 
+/* Hero / Project Image */
+.project-hero {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  transition: transform 0.3s ease;
+}
+
+.project-hero:hover {
+  transform: scale(1.02);
+}
+
+/* Section styling */
+section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+/* Artifacts / PDF links */
+section a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #2563eb;
+}
+
+section a:hover {
+  text-decoration: underline;
+  color: #1e40af;
+}
+
+/* Back to projects link */
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+  color: #1e40af;
+}
