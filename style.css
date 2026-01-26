@@ -130,3 +130,51 @@ section {
   padding: 24px 0;
   margin-top: 64px;
 }
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #0d1b2a, #102a43);
+  color: #ffffff;
+  padding: 96px 0 88px;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.hero h1 span {
+  font-weight: 400;
+  color: #cbd5e1;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-bottom: 36px;
+  color: #e5e7eb;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #4dabf7;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #4dabf7;
+  color: #0d1b2a;
+}
+
