@@ -1,233 +1,71 @@
-/* Base / Global */
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  background-color: #f4f6f9;
-  color: #1a1a1a;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 24px;
-}
-
-h2 {
-  margin-bottom: 16px;
-  font-size: 26px;
-}
-
-section {
-  margin: 56px 0;
-}
-
-/* Header */
-.app-header {
-  background-color: #0d1b2a;
-  color: #ffffff;
-  padding: 48px 0;
+.projects {
+  padding: 60px 20px;
   text-align: center;
 }
 
-.app-header h1 {
-  margin: 0;
-  font-size: 36px;
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
-.app-header p {
-  margin-top: 8px;
-  color: #cbd5e1;
-}
-
-/* Navigation */
-.app-nav {
-  background-color: #102a43;
-}
-
-.app-nav .container {
-  display: flex;
-  align-items: center;
-  height: 56px;
-}
-
-.app-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  margin-right: 24px;
-  font-weight: 600;
-}
-
-.app-nav a.active,
-.app-nav a:hover {
-  color: #4dabf7;
-}
-
-/* Projects / Cards */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
 }
 
 .project-card {
   background: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: left;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
-}
-
-.project-card img {
-  width: 100%;
-  height: auto;
-  max-height: 280px; /* Limits overly large images */
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 16px;
+  transform: translateY(-6px);
 }
 
 .project-card h3 {
-  margin-top: 0;
+  margin-bottom: 5px;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 16px;
-  background-color: #1c7ed6;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
+.role {
   font-weight: 600;
-}
-
-.btn:hover {
-  background-color: #1864ab;
-}
-
-/* Skills */
-.skills-list {
-  list-style: none;
-  padding: 0;
-  columns: 2;
-}
-
-.skills-list li {
+  color: #555;
   margin-bottom: 10px;
 }
 
-/* Footer */
-.app-footer {
-  background-color: #0d1b2a;
-  color: #cbd5e1;
-  text-align: center;
-  padding: 24px 0;
-  margin-top: 64px;
+.description {
+  margin-bottom: 10px;
 }
 
-/* Hero Section */
-.hero {
-  background: linear-gradient(135deg, #0d1b2a, #102a43);
-  color: #ffffff;
-  padding: 96px 0 88px;
-}
-
-.hero-content {
-  max-width: 900px;
-}
-
-.hero h1 {
-  font-size: 44px;
-  line-height: 1.2;
-  margin-bottom: 24px;
-}
-
-.hero h1 span {
-  font-weight: 400;
-  color: #cbd5e1;
-}
-
-.hero-subtitle {
-  font-size: 18px;
-  line-height: 1.6;
-  max-width: 700px;
-  margin-bottom: 36px;
-  color: #e5e7eb;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.btn-secondary {
-  background-color: transparent;
-  border: 2px solid #4dabf7;
-  color: #ffffff;
-}
-
-.btn-secondary:hover {
-  background-color: #4dabf7;
-  color: #0d1b2a;
-}
-/* Portfolio Overview Section */
-.overview {
-  padding: 80px 0;
-  background-color: #f8fafc;
-}
-
-.overview-title {
-  font-size: 30px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.overview-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
-}
-
-.overview-card {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 28px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.overview-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
-}
-
-.overview-card h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-size: 20px;
-  color: #0d1b2a;
-}
-
-.overview-card p {
-  margin-bottom: 16px;
-  line-height: 1.6;
-  color: #334155;
-}
-
-.overview-card ul {
+.project-card ul {
   padding-left: 18px;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
-.overview-card li {
-  margin-bottom: 8px;
-  color: #475569;
+.project-card li {
+  margin-bottom: 5px;
 }
 
+.tech {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.buttons a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #0077ff;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.buttons a:hover {
+  background: #005fcc;
+}
